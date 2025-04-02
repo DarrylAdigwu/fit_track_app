@@ -1,0 +1,34 @@
+{
+  "name": "fit_track_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run dev --prefix client",
+    "server": "npm run devStart --prefix server",
+    "react": "npm run build --prefix client",
+    "express": "npm run start --prefix server",
+    "devSet": "concurrently \"npm run client\" \"npm run server\"",
+    "prodSet": "concurrently \"npm run react\" \"npm run express\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarrylAdigwu/fit_track_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/DarrylAdigwu/fit_track_app/issues"
+  },
+  "homepage": "https://github.com/DarrylAdigwu/fit_track_app#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "kill-port": "^2.0.1"
+  }
+}
